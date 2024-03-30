@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.cont{
+    height: 190vh;
+    width: 100%;
+    background-color:rgb(255, 255, 255) ;
+}
+.box1{
+    width: 100%;
+    height: 12vh;
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    justify-content: space-between;
+}
+.box2{
+    height: 100vh;
+    width: 100%;
+    background-color:grey ;
+    margin-top: 1px;
+    position: relative;
+}
+.box3{
+    height: 67vh;
+    width: 100%;
+    margin-top: 2px;
+    background-image: url(page.png);
+  background-repeat: no-repeat;
+  background-size: 100% 500px;
+}
+.box4{
+    height: 10vh;
+    width: 100%;
+    background-color:black ;
+    margin-top: 2px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.box11{
+    width: 38%;
+    height: 10vh;
+    margin-left: 70px;
+    margin-top: 1vh;
+}
+.box12{
+    width: 45%;
+    height: 6vh;
+    margin-right: 40px;
+    margin-top: 3vh;
+    display: flex;
+    gap: 20px;
+
+}
+.icon{
+    height: 40px;
+    width: 40px;
+}
+#moviepick{
+    width: 170px;
+    height: 40px;
+    background-color:rgb(4, 26, 49) ;
+    color: #fff;
+    font-family: Arial;
+    font-size: 16px;
+    border: 0;
+}
+.custom-select {
+position: relative;
+font-family: Arial;
+}
+
+.custom-select select {
+display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+background-color: rgb(4, 26, 49);
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+position: absolute;
+content: "";
+top: 14px;
+right: 10px;
+width: 0;
+height: 0;
+border: 6px solid transparent;
+border-color: #fff transparent transparent transparent;
+
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+border-color: transparent transparent #fff transparent;
+top: 7px;
+
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+color: #ffffff;
+padding: 8px 12px;
+border: 1px solid transparent;
+border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+cursor: pointer;
+user-select: none;
+
+}
+
+/*style items (options):*/
+.select-items {
+position: absolute;
+background-color: rgb(4, 21, 38);
+top: 70%;
+left: 0;
+right: 0;
+z-index: 67;
+opacity: 0.7;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+background-color: rgba(0, 0, 0, 0.1);
+}
+.box2{
+background-image: url(Wallpaper2.jpg)
+}
+span[id=a1]{color: rgb(255, 255, 255); font-size: 50px;font-family: "Ranchers", sans-serif;
+font-weight: 400;
+font-style: normal;}
+span[id=a2]{color: rgb(203, 11, 11); font-size: 50px; font-family: "Emblema One", system-ui;
+font-weight: 400;
+font-style: normal;}
+span[id=a3]{color: rgb(255, 255, 255); font-size: 28px; font-family: "PT Serif Caption", serif;
+font-weight: 400;
+font-style: normal;}
+span[id=a4]{color: rgb(255, 255, 255); font-size: 107px; font-family: "Alumni Sans Inline One", sans-serif;
+font-weight: 400;
+font-style: normal;}
+span[id=a5]{color: rgb(255, 255, 255); font-size: 34px; font-family: "PT Serif Caption", serif;
+font-weight: 400;
+font-style: normal;}
+span[id=a6]{color: rgb(255, 255, 255); font-size: 60px; font-family: "PT Serif Caption", serif;
+font-weight: 400;
+font-style: normal;}
+span[id=a7]{color: rgb(255, 255, 255); font-size: 24px; font-family: "PT Serif Caption", serif;
+    font-weight: 400;
+    font-style: normal;}
+
+.box21{
+width: 70%;
+height: 20vh;
+color: #ffffff;
+position: absolute;
+top: 70px;
+left: 200px;
+}  
+.box22{
+height: 220px;
+width: 300px;
+background-color: grey;
+position: absolute;
+top: 250px;
+left: 40px;
+color: #ffffff;
+font-size: 21px;
+opacity: 0.7;
+border-radius: 10%;
+
+}
+.box22 ul {
+list-style: none;
+}
+
+.box22 ul li:before {
+content: '✓';
+
+}
+.box23{
+height: 400px;
+width: 60%;
+
+position: absolute;
+top: 200px;
+left: 400px;
+}
+p[id=line1]{color: rgb(255, 255, 255); font-size: 30px; font-family: "PT Serif Caption", serif;
+font-weight: 400;
+font-style: normal;}
+.drop{
+width: 200px;
+height: 40px;
+border: 1px solid #999;
+font-size: 20px;
+color: #1c87c9;
+background-color: #eee;
+border-radius: 5px;
+
+}
+#getrec{
+    width: 170px;
+    height: 40px;
+    background-color:rgb(152, 31, 31) ;
+    color: #fff;
+    font-family: Arial;
+    font-size: 21px;
+    border: 0;
+    position: absolute;
+    top: 250px;
+    left: 100px;
+}
+#recommendation{
+  height: 50px;
+  width: 320px;
+  position: absolute;
+  top: 250px;
+  left: 300px;
+  background-color: #3c3f41;
+  font-size: 21px;
+  text-align: center;
+  color: white;
+  opacity: .7;
+
+}
+a{
+  color: white;
+}
+.browse{
+  height: 70px;
+  width: 500px;
+  position: absolute;
+  top: 560px;
+  left: 420px;
+  text-align: justify;
+}
+#brogen{
+    width: 320px;
+    height: 50px;
+    background-color:rgb(152, 31, 31) ;
+    color: #fff;
+    font-family: Arial;
+    font-size: 25px;
+    border: 0;
+    position: absolute;
+    top: 10px;
+    left: 160px;
+}
+.box41{
+  height: 6vh;
+  font-size: 21px;
+  color: #ffffff;
+  margin-left: 70px;
+  margin-top: 3vh;
+}
+.box42{
+  height: 6vh;
+  font-size: 21px;
+  color: #ffffff;
+  margin-top: 3vh;
+  margin-right: 70px;
+}
+.tdk1{
+    height: 120vh;
+    width: 100%;
+    background: linear-gradient(to bottom, #081c24, #0f303f);
+}
+.tdkbox1{
+    height: 18vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.tdkbox11{
+    height: 14vh;
+    width: 40%;
+
+    margin-top: 2vh;
+    margin-left: 100px;
+
+}
+.tdkbox111{
+    height: 10vh;
+    width: 100%;
+
+
+}
+.tdkbox112{
+    height: 6vh;
+    width: 100%;
+
+
+}
+.tdkbox12{
+    height: 14vh;
+    width: 40%;
+background-image: url(tdkrat.png);
+background-repeat: no-repeat;
+    margin-top: 4vh;
+    background-size: 90% 14vh;
+}
+.tdkbox2{
+    height: 50vh;
+    width: 100%;
+
+}
+.tdkbox21{
+    height: 50vh;
+    width: 85%;
+margin: auto;
+}
+.tdkbox211{
+    height: 50vh;
+    width: 40%;
+float: left;
+
+}
+.tdkbox3{
+    width: 100%;
+    height:40vh;
+
+}
+.tdkbox31{
+    width:85% ;
+    height: 40vh;
+    margin: auto;
+    background-image: url(tdkcast.png);
+    background-repeat: no-repeat;
+    background-size: 100% 300px;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+form {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.rating {
+    margin-bottom: 10px;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    display: inline-block;
+    cursor: pointer;
+    color: #888;
+}
+
+.rating label:before {
+    content: "\2605";
+    font-size: 24px;
+}
+
+.rating input:checked ~ label {
+    color: #ffa500;
+}
+
+#message {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
